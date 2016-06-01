@@ -23,8 +23,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        }
+    }
 
+
+    public void click(View view) {
+        TextView textView = (TextView) findViewById(R.id.textView);
+        textView.setText("bye world!");
+    }
+
+    public void clickIntent(View view) {
+        Intent intent = new Intent(this, Main2Activity.class);
+        startActivity(intent);
+    }
 
 
 
